@@ -77,12 +77,17 @@ export default function Navebar() {
 
             {/* Buttons */}
             <li className="flex space-x-2 mt-4 lg:mt-0 lg:ml-6 px-3">
-              <button className="px-4 py-2 text-sm rounded-full text-slate-900 border border-gray-400 hover:bg-gray-50">
+              <Link href="/login">
+              <button className="px-4 py-2 text-sm rounded-full text-slate-900 border border-gray-400 hover:bg-gray-50 ">
                 Login
               </button>
-              <button className="px-4 py-2 text-sm rounded-full text-white bg-blue-600 border border-blue-600 hover:bg-blue-700">
-                Sign up
-              </button>
+              </Link>
+          <Link href="/signup">
+             <button className="px-4 py-2 text-sm rounded-full text-white bg-blue-600 border border-blue-600 hover:bg-blue-700">
+            Sign up
+           </button>
+          </Link>
+
             </li>
           </ul>
         </nav>

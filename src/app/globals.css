@@ -85,60 +85,43 @@ textarea {
 button:hover {
   background-color: #444;
 }
-
-
-
-.action{
-  position: relative;
-  top: 22px;
-  left: 120px;
-  transform: translate(-50%, -50%);
-  transition: all 1s;
-  width: 50px;
-  height: 40px;
-  background: white;
-  box-sizing: border-box;
-  border-radius: 30px;
-  
-}
-.saction{
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 80%;
-  height: 42px;
-  outline: 0;
-  border: 0;
-  display: none;
-  color: black;
-  font-family: 'Times New Roman', Times, serif;
-  font-size: 1.2em;
-  border-radius: 20px;
-  padding: 0 20px;
-  margin-left: 30px;
-  
-}
-
-
-
-form:hover{
-  width: 250px;
-  cursor: pointer;
-}
 form:hover input{
   display: block;
 }
   
-  .search {
-    color: black;
-    position: relative;
-    top: 6px;
-    left: 9px;
-    height: 40px;
-    width: 50px;
-    
+ @media (max-width: 768px) {
+  .container {
+    margin: 20px 10px;
+    padding: 15px;
   }
-  .icoon{
-    color: black;
-    font-size: 32px;
+
+  h1 {
+    font-size: 24px;
   }
+
+  #cbtn {
+    padding: 10px;
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  h1 {
+    font-size: 20px;
+  }
+
+  p.subtitle {
+    font-size: 14px;
+  }
+
+  input,
+  textarea {
+    font-size: 14px;
+    padding: 8px;
+  }
+
+  #cbtn {
+    font-size: 14px;
+    padding: 10px;
+  }
+}
